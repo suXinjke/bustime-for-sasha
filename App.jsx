@@ -13,7 +13,7 @@ function retrieveUserId() {
 }
 
 function retrieveStopsAndBuses() {
-    return fetch( 'https://cors-anywhere.herokuapp.com/https://www.bustime.ru/static/js/city-20-10.js' )
+    return fetch( 'https://cors-anywhere.herokuapp.com/https://www.bustime.ru/static/js/city-20-171.js' )
         .then( res => res.text() )
         .then( js_string => {
             const stops_string = js_string.match( /stops=([^\;]+);/ )[1]
